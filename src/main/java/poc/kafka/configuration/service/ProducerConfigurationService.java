@@ -19,6 +19,7 @@ public class ProducerConfigurationService implements ConfigurationStrategy {
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, server);
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
+
         return properties;
     }
 
